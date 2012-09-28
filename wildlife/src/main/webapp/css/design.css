@@ -6,3 +6,9 @@
     color: #FFFFFF;
     margin-top: 6px;
 }
+
+.navigation_bar {
+    width:6px;
+    height:35px;
+    float:left;
+}

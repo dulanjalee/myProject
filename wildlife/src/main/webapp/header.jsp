@@ -1,7 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page import="java.io.InputStream" %>
+<%@page import="java.util.Properties" %>
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <%
+                InputStream stream = application.getResourceAsStream("message.properties");
+                Properties props = new Properties();
+                props.load(stream);
+            %>
         </head>
         <body>
             <div>

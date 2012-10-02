@@ -1,5 +1,13 @@
+<%@page import="java.io.InputStream" %>
+<%@page import="java.util.Properties" %>
+
 <html>
     <head>
+        <%
+            InputStream stream = application.getResourceAsStream("message.properties");
+            Properties props = new Properties();
+            props.load(stream);
+        %>
     </head>
     <body>
         <div>

@@ -1,13 +1,8 @@
-<%@page import="java.io.InputStream" %>
-<%@page import="java.util.Properties" %>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
 <html>
     <head>
-        <%
-            InputStream stream = application.getResourceAsStream("message.properties");
-            Properties props = new Properties();
-            props.load(stream);
-        %>
+
     </head>
     <body>
         <div>
